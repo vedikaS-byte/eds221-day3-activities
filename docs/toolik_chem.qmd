@@ -65,9 +65,8 @@ for(i in 1:ncol(inlet_biochem)){
 # str(toolik_biochem)
 # colname_1 <- dimnames(as.matrix(inlet_biochem))[[2]] 
 
-apply(inlet_biochem, MARGIN = 2, FUN = mean)
-
-
+apply(inlet_biochem, MARGIN = 2, FUN = mean, na.rm = T)
+inlet_biochem %>% na.omit() %>%  summarise(across(c(p_h, doc_u_m, tdn_u_m), mean))
 ```
 
 

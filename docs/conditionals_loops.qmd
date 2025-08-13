@@ -74,8 +74,7 @@ for(i in fish){
   print(fish_prop)
 }
 
-mass <- seq(from = 0, to = 12, by = .5)
-print(mass)
+
 ```
 ## Task 5
 ```{r}
