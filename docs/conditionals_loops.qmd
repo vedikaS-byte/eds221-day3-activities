@@ -67,5 +67,30 @@ main_cost("chicken")
 ```
 # For loop
 
+## Task 4 
+```{r}
+# Create a new vector called fish that contains the values 8, 10, 12, 23 representing counts of different fish types in a fish tank (goldfish, tetras, guppies, and mollies, respectively). Write a for loop that iterates through fish, and returns what proportion of total fish in the tank are that species. Assume that these counts represent all fish in the tank.
+fish <- c(goldfish = 8, tetras = 10, guppies = 12, mollies = 23)
+fish
+#fish <- c(8,10, 12,23)
+for(i in fish){
+  fish_prop = (i/(sum(fish)))*100
+  print(fish_prop)
+}
+
+mass <- seq(from = 0, to = 12, by = .5)
+print(mass)
+```
+## Task 5
+```{r}
+# There is an existing vector in R called month.name that contains all month names (just ry running month.name in the Console to check it out). Write a for loop that iterates over all months in month.name and prints “January is month 1,” “February is month 2”, etc.
+month.name
+n = c(1:12)
+for(i in month.name[i]){
+   print(paste(month.name, "is month", n))
+}
+```
+# Real Data
+
 
 
