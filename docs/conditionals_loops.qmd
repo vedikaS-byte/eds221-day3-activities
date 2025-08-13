@@ -1,0 +1,71 @@
+---
+title: "conditionals_loops"
+format: html
+---
+
+# Conditional statements
+## Task 1
+```{r}
+
+# Create an object called pm2_5 with a value of 48 (representing Particulate Matter 2.5, an indicator for air quality, in 
+pm2_5 <- 48
+
+#  (see more about PM2.5 here).
+# 
+# Write an if - else if - else statement that returns “Low to moderate risk” if pm2_5 (for Particulate Matter 2.5) is less than 100, “Unhealthy for sensitive groups” if PM 2.5 is 100 <= pm2_5 < 150, and “Health risk present” if PM 2.5 is >= 150.
+# 
+if(pm2_5 < 100) {
+  print("Low to moderate risk")
+} else if(100 <= pm2_5 & pm2_5 < 150) {
+  print("Unhealthy for sensitive groups")
+} else(pm2_5 >= 150) 
+  print("Health risk present") 
+
+ 
+# Test by changing the value of your pm2_5 object and re-running your statement to check.
+
+
+```
+## Task 2 
+```{r}
+# Store the string “blue whale” as an object called species. Write an if statement that returns “You found a whale!” if the string “whale” is detected in species, otherwise return nothing. Test by changing the species string & re-running to see output.
+species <- "blue whale"
+?match()
+switch (species,
+  "blue whale" = print("You found a whale!"))
+
+```
+
+## Task 3
+```{r}
+# Store the base price of a burrito as base_burrito with a value of 6.50. Store main_ingredient with a starting string of “veggie.” 
+base_burrito <- 6.50 
+#main_ingredient <- "veggie"
+
+#Write a statement that will return the price of a burrito based on what a user specifies as “main_ingredient” (either “veggie”, “chicken” or “steak”) given the following:
+
+# A veggie burrito is the cost of a base burrito
+# A chicken burrito costs 3.00 more than a base burrito
+# A steak burrito costs 3.25 more than a base burrito
+main_cost <- function(main_ingredient)
+  { 
+  if(main_ingredient == "veggie") {
+  cost_burrito = base_burrito 
+  print(cost_burrito)
+} else if (main_ingredient == "chicken"){
+  cost_burrito = 3 * base_burrito
+  print(cost_burrito)
+} else {
+  cost_burrito = 3.25 * base_burrito
+  print(cost_burrito)
+}
+}
+main_cost("veggie")
+main_cost("steak")
+main_cost("chicken")
+# you can also use switch()
+```
+# For loop
+
+
+
