@@ -21,10 +21,6 @@ if(pm2_5 < 100) {
 } else(pm2_5 >= 150) 
   print("Health risk present") 
 
- 
-# Test by changing the value of your pm2_5 object and re-running your statement to check.
-
-
 ```
 ## Task 2 
 ```{r}
@@ -90,7 +86,5 @@ for(i in month.name[i]){
    print(paste(month.name, "is month", n))
 }
 ```
-# Real Data
-
 
 
